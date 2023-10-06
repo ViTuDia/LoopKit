@@ -17,22 +17,6 @@ public protocol PumpManagerStatusObserver: AnyObject {
     func pumpManager(_ pumpManager: PumpManager, didUpdate status: PumpManagerStatus, oldStatus: PumpManagerStatus)
 }
 
-public enum BolusActivationType: String, Codable {
-    case manualNoRecommendation
-    case manualRecommendationAccepted
-    case manualRecommendationChanged
-    case automatic
-
-    public var isAutomatic: Bool {
-        self == .automatic
-    }
-
-    static public func activationTypeFor(recommendedAmount: Double?, bolusAmount: Double) -> BolusActivationType {
-        guard let recommendedAmount = recommendedAmount else { return .manualNoRecommendation }
-        return recommendedAmount =~ bolusAmount ? .manualRecommendationAccepted : .manualRecommendationChanged
-    }
-}
-
 public protocol PumpManagerDelegate: DeviceManagerDelegate, PumpManagerStatusObserver {
     func pumpManagerBLEHeartbeatDidFire(_ pumpManager: PumpManager)
 
@@ -60,7 +44,7 @@ public protocol PumpManagerDelegate: DeviceManagerDelegate, PumpManagerStatusObs
     /// For pumps with a user interface and dosing history capabilities, lastReconciliation should be reflective of the last time we reconciled fully with pump history, and know
     /// that we have accounted for any external doses. It is possible for the pump to report reservoir data beyond the date of lastReconciliation, and Loop can use it for
     /// calculating IOB.
-    func pumpManager(_ pumpManager: PumpManager, hasNewPumpEvents events: [NewPumpEvent], lastReconciliation: Date?, completion: @escaping (_ error: Error?) -> Void)
+    func pumpManager(_ pumpManager: PumpManager, hasNewPumpEvents events: [NewPumpEvent], lastReconciliation: Date?, replacePendingEvents: Bool, completion: @escaping (_ error: Error?) -> Void)
 
     func pumpManager(_ pumpManager: PumpManager, didReadReservoirValue units: Double, at date: Date, completion: @escaping (_ result: Result<(newValue: ReservoirValue, lastValue: ReservoirValue?, areStoredValuesContinuous: Bool), Error>) -> Void)
 
@@ -144,7 +128,7 @@ public protocol PumpManager: DeviceManager {
     
     /// The most-recent status
     var status: PumpManagerStatus { get }
-    
+
     /// Adds an observer of changes in PumpManagerStatus
     ///
     /// Observers are held by weak reference.
@@ -266,5 +250,4 @@ public extension PumpManager {
             completion()
         }
     }
-
 }
