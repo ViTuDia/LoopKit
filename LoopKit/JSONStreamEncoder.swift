@@ -45,9 +45,19 @@ public class JSONStreamEncoder {
         }
 
         for value in values {
-            try stream.write(encoded ? ",\n" : "[\n")
-            try stream.write(try Self.encoder.encode(value))
-            encoded = true
+            do {
+                let encodedData = try Self.encoder.encode(value)
+                try stream.write(encoded ? ",\n" : "[\n")
+                try stream.write(encodedData)
+                encoded = true
+            } catch {
+                // Log the error and insert a placeholder or error message in the JSON
+                print("Failed to encode value: \(value) with error: \(error.localizedDescription)")
+                let errorInfo = "{\"error\": \"Failed to encode value: \(value) due to: \(error.localizedDescription)\"}"
+                try stream.write(encoded ? ",\n" : "[\n")
+                try stream.write(errorInfo.data(using: .utf8)!)
+                encoded = true
+            }
         }
     }
 
