@@ -1284,7 +1284,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "%@ carbs, %@ absorption"
+            "value" : "%@ 碳水,  %@ 吸收时间"
           }
         }
       }
@@ -1635,7 +1635,7 @@
         },
         "hu" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "%@U"
           }
         },
@@ -1670,6 +1670,12 @@
           }
         },
         "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@U"
+          }
+        },
+        "ro" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "%@U"
@@ -2642,7 +2648,7 @@
         },
         "hu" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "%1$@ units remaining at %2$@"
           }
         },
@@ -2680,6 +2686,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%1$@ unidades restantes em %2$@"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@ unități rămase la %2$@"
           }
         },
         "ru" : {
@@ -3838,7 +3850,7 @@
         "ro" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "🍽 Preprandial"
+            "value" : "🍽 Înainte de masă"
           }
         },
         "ru" : {
@@ -8644,7 +8656,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "好的"
+            "value" : "OK"
           }
         }
       }
@@ -9131,7 +9143,7 @@
         },
         "hu" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Continue"
           }
         },
@@ -9169,6 +9181,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Continuar"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Continuați"
           }
         },
         "ru" : {
@@ -11215,6 +11233,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "OK"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Realizat"
           }
         },
         "ru" : {
@@ -17164,7 +17188,7 @@
         "ro" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Raport Carbohidrați/Insulina scăzut"
+            "value" : "Raport Carbohidrați Insulină scăzut"
           }
         },
         "ru" : {
@@ -17450,7 +17474,7 @@
         "ro" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Limita inferioara de siguranță a glicemiei"
+            "value" : "Limita inferioară de siguranță a glicemiei"
           }
         },
         "ru" : {
@@ -18022,7 +18046,7 @@
         "ro" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Valoare mica preprandiala"
+            "value" : "Valoare scăzută înainte de masă"
           }
         },
         "ru" : {
@@ -21279,7 +21303,7 @@
         "ro" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Preprandial"
+            "value" : "Înainte de masă"
           }
         },
         "ru" : {
@@ -21422,7 +21446,7 @@
         "ro" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Valori preprandiale"
+            "value" : "Valori înainte de masă"
           }
         },
         "ru" : {
@@ -23616,6 +23640,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Salvar"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Salvează"
           }
         },
         "ru" : {
@@ -27540,7 +27570,7 @@
         "ro" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Reduceți temporar glicemia țintă înainte de masă pentru a avea un impact asupra vârfurilor postprandiale."
+            "value" : "Reduceți temporar glicemia țintă înainte de masă pentru a avea un impact asupra vârfurilor de glicemie de după masă."
           }
         },
         "ru" : {
@@ -28118,7 +28148,7 @@
         "ro" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "față de intervalul de corecții."
+            "value" : "față de intervalul dumneavoastră de corecție"
           }
         },
         "ru" : {
@@ -31585,6 +31615,12 @@
             "value" : "Desconhecido"
           }
         },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Necunoscut"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -33178,7 +33214,7 @@
         "ro" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Intervalul ținta pentru antrenament este valoarea glicemiei sau intervalul de valori pe care vrei să le țintești %1$@ în timpul activității. Acest interval va fi în vigoare atunci când activați butonul de presetare a antrenamentului."
+            "value" : "Intervalul ținta pentru antrenament este valoarea glicemiei sau intervalul de valori pe care vrei ca %1$@ să le țintească în timpul activității. Acest interval va fi în vigoare atunci când activați butonul de presetare a antrenamentului."
           }
         },
         "ru" : {
@@ -33464,7 +33500,7 @@
         "ro" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Poți adăuga diferite rații carbohidrați/insulina pentru diferite momente ale zilei folosind ➕."
+            "value" : "Poți adăuga diferite raporturi carbohidrați insulină pentru diferite momente ale zilei folosind ➕."
           }
         },
         "ru" : {
@@ -34614,7 +34650,7 @@
         "ro" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "limita de siguranță a glicemiei"
+            "value" : "limita dumneavoastră de siguranță a glicemiei"
           }
         },
         "ru" : {
@@ -34757,7 +34793,7 @@
         "ro" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Medicul dvs. vă poate ajuta să alegeți un interval de corecție potrivit pentru dvs."
+            "value" : "Furnizorul dumneavoastră de servicii medicale vă poate ajuta să alegeți un interval de corecție potrivit pentru dvs."
           }
         },
         "ru" : {
@@ -34900,7 +34936,7 @@
         "ro" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Factorul de sensibilitate la insulină (ISF) este scăderea glicemiei determinata de o unitate de insulină."
+            "value" : "Factorul de sensibilitate la insulină (ISF) este scăderea glicemiei determinată de o unitate de insulină."
           }
         },
         "ru" : {
@@ -35043,7 +35079,7 @@
         "ro" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Intervalul ținta preparandial trebuie să fie valoarea glicemiei (sau intervalul de valori) pe care doriți %1$@ să o vizați până la prima mușcătură a mesei. Acest interval va fi în vigoare atunci când activați butonul Presetare înainte de masă."
+            "value" : "Intervalul înainte de masă ar trebui să fie valoarea glicemiei (sau intervalul de valori) pe care doriți ca %1$@ să o vizeze până la prima îmbucătură din masă. Acest interval va intra în vigoare atunci când activați butonul Presetare înainte de masă."
           }
         },
         "ru" : {
